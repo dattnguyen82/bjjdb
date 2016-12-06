@@ -1,1 +1,1 @@
-web: bjjdb
+web: node service.js
