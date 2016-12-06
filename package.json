@@ -1,0 +1,12 @@
+{
+ "name" : "website-using-express",
+  "version" : "0.0.1",
+  "main" : "services.js",
+  "scripts" : {
+    "start" : "node services.js"
+  },
+  "dependencies" : {
+    "express" : "latest",
+    "pg-promise" : "latest"
+  }
+}
