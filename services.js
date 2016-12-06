@@ -1,6 +1,6 @@
 var express = require('express');
-// var pg = require('pg');
-// var conString = "postgres://zuktmeqgijrqvk:IJTJFbxJpg8d7fyJ5N2P1s6e0g@ec2-50-19-227-171.compute-1.amazonaws.com:5432/dbe6e2j6v1ah3l";
+var pg = require('pg');
+// var conString = "postgres://ribgvubpumktok:b_FGDg-TAOB8-AqBXjpMDS8e_G@ec2-54-235-123-159.compute-1.amazonaws.com:5432/d8lv2q1l368s7i";
 //
 // var client = new pg.Client(conString);
 // client.connect();
@@ -12,6 +12,11 @@ app.set('port', (process.env.PORT || 5000));
 
 
 var router = express.Router();
+
+
+router.get('/info', function(req, res) {
+    res.json({ database: process.env.DATABASE });
+});
 
 router.get('/', function(req, res) {
     res.json({ message: 'BJJ-DB' });   
