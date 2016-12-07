@@ -15,7 +15,7 @@ var router = express.Router();
 
 
 router.get('/info', function(req, res) {
-    res.json({ database: process.env.DATABASE });
+    res.json({ database: process.env });
 });
 
 router.get('/', function(req, res) {
