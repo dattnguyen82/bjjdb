@@ -24,7 +24,7 @@ router.get('/info', function(req, res) {
 
 router.get('/competitors', function(req, res) {
 
-    pg.connect(connectionString, (err, client, done) =>
+    pg.connect(conString, (err, client, done) =>
     {
         // Handle connection errors
         if(err)
