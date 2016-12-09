@@ -34,7 +34,7 @@ router.get('/competitors', function(req, res) {
             return res.status(500).json({success: false, data: err});
         }
         // SQL Query > Select Data
-        const query = client.query('SELECT * FROM competitors');
+        const query = client.query('SELECT * FROM bjjdb.competitors');
         // Stream results back one row at a time
         query.on('row', (row) => {
             results.push(row);
