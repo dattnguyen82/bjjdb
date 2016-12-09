@@ -3,9 +3,9 @@ var pg = require('pg');
 var conString = process.env.DATABASE_URL;
 
 var client = new pg.Client(conString);
-client.connect();
+// client.connect();
 
-const query = client.query();
+// const query = client.query();
 
 // query.on('end', () => { client.end(); });
 
