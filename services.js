@@ -7,7 +7,7 @@ client.connect();
 
 const query = client.query();
 
-query.on('end', () => { client.end(); });
+// query.on('end', () => { client.end(); });
 
 var app = express();
 
